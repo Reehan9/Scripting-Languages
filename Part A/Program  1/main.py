@@ -7,7 +7,7 @@ print("\n")
 print ("Max value element : ", max(List))  # max element of the list
 print ("Min value element : ", min(List)) # min element of the list
 print("Enter the value to be appended") # appending the value
-List.append(int(input()))  # Appending a list
+List.append(int(input()))  # Appending a list , can use List.insert(pos,value)
 print(List[0:len(List)]) # Printing the list
 
 print("Enter the index you want to delete")
