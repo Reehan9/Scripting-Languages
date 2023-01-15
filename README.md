@@ -87,12 +87,3 @@ a. Add the string received to a pre-existing Javascript array named “Original_
 b. For each array element, use a callback function and store each one’s length in a new array named “MyLength”
 c. Write a Javascript function that takes the arrays “Original_String” and “MyLength” as argument. This function filters those strings with length less than or equal to 3.
 
-8. Python and JavaScript - ATM Application: Design a HTML form that displays user’s current balance, an input field to enter amount and buttons to withdraw or deposit money. Validate the form such that
-a. Negative amount cannot be entered and Users cannot withdraw more than 5000 at one time
-b. Users cannot withdraw amount greater than their balance and cannot deposit more than 10000 at one time. Also users can perform at most 5 transactions. Update the balance accordingly and ensure relevant data is not lost on closing the browser
-
-9. Python and JavaScript - Shopping Cart Application: Design a simple Shopping Cart application which allows users to add items to their cart from a list of products. Allow users to view their cart (items and quantities of each). Ensure that items in the cart persist even after closing the application. On selecting buy, print out a bill of items in the cart. Perform any necessary validation. Demonstrate data persistence even after the browser is closed.
-
-10. Write a Python program to perform the following:
-• Apply histogram equalization on the given image for contrast enhancement.
-• Detect edges in the given image.
