@@ -4,65 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>String</title>
+    <script src="test.js"></script>
 </head>
 <body>
-    Enter the string : <input type = "text" id  = "stringEntry"><br><br>
-    Enter the substring : <input type = "text" id  = "subString">
-    <input type = "button" value = "Result" onclick="intaliseFunctions()">
-    <h3>Characters : </h3> <span id = "char"></span><br><br>
-    <h3>Whitespaces : </h3> <span id = "ws"></span><br><br>
-    <h3>Special Characters : </h3> <span id = "sc"></span><br><br>
-    <h3>Number of Digits : </h3> <span id = "nod"></span><br><br><br>
-    <h3>String occurences in the substring: </h3><span id = "search"></span><br><br>
-    <h3>Pattern obtained in the string : </h3><span id = "patternobt"></span><br><br>
-
-    <script>
-        function countOccurences(str){
-            alert()
-            var characters = 0 ;
-            var whitespaces = 0;
-            var specialCharacters = 0;
-            var digit = 0;
-            for (var i = 0 ; i < str.length; i++){
-                var ch = str[i];
-                if((ch>="a" && ch<="z")|| (ch>="A" && ch<="Z")) characters++;
-                else if(ch>='0' && ch<='9') digit++;
-                else if (ch==" ") whitespaces++;
-                else specialCharacters++;
-            }
-        document.getElementById("char").innerHTML = characters;
-        document.getElementById("ws").innerHTML = whitespaces;
-        document.getElementById("sc").innerHTML = specialCharacters;
-        document.getElementById("nod").innerHTML = digit;
-        }
-        function printIndex(str, word){
-            var flag = false;
-        for (var i = 0 ; i < str.length ; i++){
-        if (str.substring(i , word.length+i)==word){
-            document.getElementById("search").innerHTML = i;
-            flag = true;
-                }
-            if (flag==false) document.getElementById("search").innerHTML = "NONE";
-             }
-          }
-        function findSubString(str,word){
-            let a = str.split(" ");
-            var count  = 0;
-            for (i= 0 ; i < str.length ; i++){
-                if(word == a[i]){
-                    count++;
-                }
-            }
-            document.getElementById("patternobt").innerHTML = count;
-        }
-    function intaliseFunctions(){
-        var a = document.getElementById("stringEntry").value;
-        var b = document.getElementById("subString").value;
-        countOccurences(a);
-        printIndex(a,b);
-        findSubString(a,b);
-    }
-    </script>
+    <h1>String and substring</h1>
+    Enter the string: <input type="text" id="string"><br>
+    Enter the substring: <input type="text" id="substring"><br>
+    <input type="button" onclick="main()" value="CLICK ME!"><br>
+    The entered string is: <span id="stringResult"></span><br>
+    The entered substring is: <span id="substringResult"></span><br>
+    No of digits in string is: <span id="digits"></span><br>
+    No of white spaces in string is: <span id="white"></span><br>
+    No of alphabets in string is: <span id="alphabets"></span><br>
+    No of special characters in string is: <span id="special"></span><br>
+    No of occurences of the substring in the string is: <span id="occurences"></span><br>
+    Position of occurence of substring in string is: <span id="pos"></span><br>
 </body>
 </html>
