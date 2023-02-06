@@ -8,7 +8,7 @@ class Reverse:
     def reverse(self):
         n = 0
         for i in self.s:
-            if i == 'a' or i == 'A' or i == 'e' or i == 'E' or i == 'o' or i == 'O' or i == 'i' or i == 'I' or i == 'u' or i == 'U':
+            if i in ('a', 'A', 'e', 'E', 'o', 'O', 'i', 'I', 'u', 'U'):
                 n += 1
 
         r = ' '.join(reversed(self.s.split(' ')))
